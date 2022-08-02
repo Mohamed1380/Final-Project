@@ -28,5 +28,5 @@ spec:
               cpu: "500m"
           ports:
             - name: httpport
-              containerPort: 8080
+              containerPort: 3000
          
