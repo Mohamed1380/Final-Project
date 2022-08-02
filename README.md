@@ -1,17 +1,7 @@
+# ITI Graduation Project
 # Provision Private GKE cluster and Bastion Host on GCP Using Terraform
-#### Deploy Python Application [Project link] (https://github.com/atefhares/DevOps-Challenge-Demo-Code)
-1. Docrize python web application using docker 
-2. Pull redis image from docker Hub 
-3. push 2 image to gcr on GCP
-```
-gcloud auth configure-docker gcr.io
-docker tag web-app  gcr.io/abdelhadyfinal/python-app
-docker push gcr.io/abdelhadyfinal/python-app
+#### Deploy nodjs Application using jenkins pipeline [Project link] (https://github.com/mahmoud254/jenkins_nodejs_example)
 
-docker tag redis gcr.io/abdelhadyfinal/redis
-docker push gcr.io/abdelhadyfinal/redis
-
-```
 # Infrastructure Resoureces on GCP
 1. Make backend configuration using GCP Bucket
 2. Create VPC
@@ -53,14 +43,14 @@ kubectl
 
 ## Deploy Kuberentes Files
 ```
-kubectl create -fR ./kubernetes
-```
-```
-kubectl get ingress
+kubectl apply -fR ./kubernetes
 ```
 
 ### Finally Destroy Infrastructur
 ```
 terraform destroy --var-file variables.tfvars
 ```
+##  jenkins deployment
+-34.102.64.26:8080 
+![My image](13ff02dc-4ab0-48a8-a67a-93d2e9ff0694.jpeg)
 
